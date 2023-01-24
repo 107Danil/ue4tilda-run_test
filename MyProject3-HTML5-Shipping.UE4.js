@@ -1145,7 +1145,7 @@ $(document).ready(function() {
 
 		// ----------------------------------------
 		// MAIN JS
-		var mainJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('UE4Game-HTML5-Shipping.js'), 'blob').then(function(data) {
+		var mainJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/107Danil/ue4tilda-run_test/acbdf9d7768bf4df7205cdf8764c6aeaf1ce350e/UE4Game-HTML5-Shipping.js'), 'blob').then(function(data) {
 				Module['mainScriptUrlOrBlob'] = data;
 				return addScriptToDom(data).then(function() {
 					addRunDependency('wait-for-compiled-code');
